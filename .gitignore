@@ -30,3 +30,6 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+# Cori workflow scratch files
+.cori-drive-doc-summarizer-source.txt
