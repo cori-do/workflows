@@ -49,7 +49,7 @@ Each workflow is a folder with:
   README.md             # workflow-specific setup and run notes
 ```
 
-The numbered files in `steps/` are the execution order. Every step exports exactly one `step.code`, `step.cli`, or `step.llm` definition from `@cori/sdk`.
+The numbered files in `steps/` are the execution order. Every step exports exactly one `step.code`, `step.cli`, or `step.llm` definition from `@cori-do/sdk`.
 
 ## Choosing an Example
 
