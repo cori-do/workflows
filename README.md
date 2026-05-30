@@ -28,6 +28,7 @@ cori login openai
 
 | Workflow | Level | Capabilities | Cost | What it shows |
 |---|---:|---|---|---|
+| `hello_world` | Beginner | `curl`, `code` | Free | End-to-end demo: fetch, transform, format |
 | `code_only` | Beginner | `code` | Free | Pure TypeScript step chaining |
 | `hn_digest` | Beginner | `curl`, `code` | Free | Public HTTP APIs and formatting |
 | `github_release_notes` | Beginner/intermediate | `gh`, `llm` | LLM tokens | GitHub API reads plus a focused LLM drafting step |
@@ -53,7 +54,7 @@ The numbered files in `steps/` are the execution order. Every step exports exact
 
 ## Choosing an Example
 
-Start with `hn_digest` if you want the fastest no-auth smoke test.
+Start with `hello_world` if you want the fastest no-auth smoke test that proves everything works.
 
 Use `github_release_notes` when you want to see a practical LLM step that turns structured API data into publishable text.
 
