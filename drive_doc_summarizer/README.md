@@ -22,6 +22,7 @@ cori run ./drive_doc_summarizer source_file_id=DRIVE_FILE_ID recipient=you@examp
 | `source_file_id` | `replace-with-drive-file-id` | Google Drive file ID to export |
 | `doc_title` | `Cori Summary` | Title for the generated Google Doc |
 | `recipient` | `you@example.com` | Email recipient for the generated document link |
+| `access_role` | `reader` | Drive role granted to the recipient (`reader`, `commenter`, `writer`) |
 | `max_input_chars` | `24000` | Maximum source characters to send to the LLM |
 | `from_email` | empty | Optional `From` header |
 
@@ -37,6 +38,8 @@ The final step returns the created document URL and Gmail IDs:
   "thread_id": "..."
 }
 ```
+
+Before emailing the link, the workflow shares the generated doc with `recipient` so they can open it. Adjust the granted role with `access_role`.
 
 This is the advanced reference example because it crosses Drive, Docs, Gmail, and LLM extraction in one deterministic sequence.
 
