@@ -1,0 +1,13 @@
+{
+  "highlights": [
+    "Refreshed the README with clearer positioning, install/try-it flow, and a shorter value proposition.",
+    "Added version and license badges to the project landing page."
+  ],
+  "changes": [
+    "Simplified the Why Cori copy to be more direct.",
+    "Moved source-build instructions into a collapsible section and made the quickstart run `cori run cori-do/workflows/hello_world` immediately after install."
+  ],
+  "fixes": [
+    "Pending local change: Google Workspace CLI auth now checks `gws auth status` instead of listing accounts, and only considers the CLI authenticated when a refresh token is available and encryption is valid."
+  ]
+}
