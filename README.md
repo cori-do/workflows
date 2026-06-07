@@ -35,6 +35,7 @@ cori login openai
 | `changelog_draft` | Intermediate | `git`, `llm`, `code` | LLM tokens | Local git history, diff stats, and stable changelog markdown rendering |
 | `gcal_daily_brief` | Intermediate | `gws`, `llm` | LLM tokens | Calendar read, Gmail send, and typed email assembly |
 | `stale_issue_triage` | Intermediate/advanced | `gh`, `code` | Free | GitHub maintenance with deterministic filtering and dry-run behavior |
+| `security_ownership_map` | Advanced | `python3`, `git` | Free | Security-oriented ownership analysis, orphaned sensitive code, and bus-factor hotspots |
 | `drive_doc_summarizer` | Advanced | `gws`, `llm` | LLM tokens | Drive export, Docs creation, Docs update, and Gmail delivery |
 
 ## Repository Layout
@@ -64,6 +65,12 @@ Use `changelog_draft` when you want to turn a local git release range into `High
 Use `gcal_daily_brief` or `drive_doc_summarizer` when you want to adapt Google Workspace automation.
 
 Use `stale_issue_triage` when you want a deterministic maintenance workflow that is safe to run in `dry_run=true` mode.
+
+Use `security_ownership_map` when you want to analyze a repository's security-sensitive ownership, uncover hidden owners, and surface low-bus-factor hotspots from git history.
+
+## Source References
+
+`security_ownership_map` is a direct workflow transformation of OpenAI's official [`security-ownership-map` skill](https://github.com/openai/skills/tree/main/skills/.curated/security-ownership-map).
 
 ## Workflow Spotlight
 
